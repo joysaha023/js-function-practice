@@ -5,15 +5,30 @@
 //  4. pass the parameter(s), check whether parameter is passed in a proper format.
 
 
-function sumOfNumber(numbers){
-    let sum = 0;
+// function sumOfNumber(numbers){
+//     let sum = 0;
+//     for(const number of numbers){
+//         console.log(number);
+//         sum = sum + number;
+//     }
+//     return sum;
+// }
+
+// const numbs = [54, 62, 12, 6];
+// const sum = sumOfNumber(numbs);
+// console.log('sum of numbers is', sum);
+
+function evenNumbersOnly(numbers){
+    const evens = [];
     for(const number of numbers){
-        console.log(number);
-        sum = sum + number;
+        if(number % 2 === 0){
+            console.log(number);
+            evens.push(number)
+        }
     }
-    return sum;
+    return evens;
 }
 
-const numbs = [54, 62, 12, 6];
-const sum = sumOfNumber(numbs);
-console.log('sum of numbers is', sum);
+const numbers = [5, 8, 91, 24, 6];
+const evens = evenNumbersOnly(numbers);
+console.log('even pnums: ', evens);
