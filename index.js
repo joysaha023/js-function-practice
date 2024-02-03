@@ -18,17 +18,24 @@
 // const sum = sumOfNumber(numbs);
 // console.log('sum of numbers is', sum);
 
-function evenNumbersOnly(numbers){
-    const evens = [];
-    for(const number of numbers){
-        if(number % 2 === 0){
-            console.log(number);
-            evens.push(number)
-        }
-    }
-    return evens;
-}
+// function evenNumbersOnly(numbers){
+//     const evens = [];
+//     for(const number of numbers){
+//         if(number % 2 === 0){
+//             console.log(number);
+//             evens.push(number)
+//         }
+//     }
+//     return evens;
+// }
 
-const numbers = [5, 8, 91, 24, 6];
-const evens = evenNumbersOnly(numbers);
-console.log('even pnums: ', evens);
+// const numbers = [5, 8, 91, 24, 6];
+// const evens = evenNumbersOnly(numbers);
+// console.log('even pnums: ', evens);
+
+function myFunction(name, country){
+    console.log(" my name is " + name + " and I'm from " + country);
+}
+myFunction("Shamim", "Bangladesh");
+myFunction("Tonny Jaa", "China");
+myFunction("King Umn", "Japan");

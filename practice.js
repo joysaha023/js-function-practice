@@ -28,22 +28,34 @@
 
 ////////////////// Task 3 //////////////////////////
 
-function make_avg(myArr, size){
-    if(size === 0 || myArr.length === 0){
-        return 0;
-    }
+// function make_avg(myArr, size){
+//     if(size === 0 || myArr.length === 0){
+//         return 0;
+//     }
 
-    let sum = 0;
-    for(let i = 0; i < size; i++){
-        sum = sum + myArr[i];
-    }
+//     let sum = 0;
+//     for(let i = 0; i < size; i++){
+//         sum = sum + myArr[i];
+//     }
     
-    let average = sum / size;
-    return average;
+//     let average = sum / size;
+//     return average;
+// }
+
+// let arr = [34, 44, 91, 20, 47, 65];
+// let arrSize = arr.length;
+
+// let result = make_avg(arr, arrSize);
+// console.log("result", result);
+
+/////////////////////// Task 4 //////////////////////
+
+function count_zero(){
+    let count = (binaryString.match(/0/g) || []).length;
+    return count;
 }
 
-let arr = [34, 44, 91, 20, 47, 65];
-let arrSize = arr.length;
+let binaryString = "110101001010";
 
-let result = make_avg(arr, arrSize);
-console.log("result", result);
+let result = count_zero(binaryString);
+console.log("Number of 0 is: ", result)
