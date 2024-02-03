@@ -50,12 +50,31 @@
 
 /////////////////////// Task 4 //////////////////////
 
-function count_zero(){
-    let count = (binaryString.match(/0/g) || []).length;
-    return count;
+function count_zero(string1){
+    let reg = /[0]/gi;
+    let test = string1.match(reg);
+    let char = test.length;
+    return char;
 }
 
 let binaryString = "110101001010";
 
 let result = count_zero(binaryString);
 console.log("Number of 0 is: ", result)
+
+
+///////////////////// task 5 //////////////////
+
+// function odd_even(num1){
+//     if(num1 % 2 === 1){
+//         return "odd";
+//     }
+//     else{
+//         return "even";
+//     }
+// }
+
+// let numbers = 91;
+
+// let result = odd_even(numbers);
+// console.log("result :", result);
